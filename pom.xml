@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.hellowd</groupId>
-	<artifactId>cms.server</artifactId>
+	<artifactId>cms.manager</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>cmsServer</name>
+	<name>cmsManager</name>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -28,32 +28,10 @@
 		<jsp.version>2.2</jsp.version>
 		<jstl.version>1.2</jstl.version>
 		<servlet.version>3.0.1</servlet.version>
-		<!--<tomcat.version>8.0.30</tomcat.version>-->
+		<tomcat.version>8.0.30</tomcat.version>
 	</properties>
 
 	<dependencies>
-
-		<!-- WEB -->
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
-			<version>${jstl.version}</version>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>${servlet.version}</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>javax.servlet.jsp</groupId>
-			<artifactId>javax.servlet.jsp-api</artifactId>
-			<version>2.3.1</version>
-			<scope>provided</scope>
-		</dependency>
-
-		<!-- Spring Boot -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -66,33 +44,26 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<scope>provided</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
 		<!--<dependency>-->
-			<!--<groupId>org.apache.tomcat.embed</groupId>-->
-			<!--<artifactId>tomcat-embed-jasper</artifactId>-->
-			<!--<scope>provided</scope>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-jetty</artifactId>-->
 		<!--</dependency>-->
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-jetty</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-jdbc</artifactId>
-			<exclusions>
-				<exclusion>
-					<groupId>org.apache.tomcat</groupId>
-					<artifactId>tomcat-jdbc</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
 
 		<!-- HikariCP -->
 		<dependency>
@@ -105,24 +76,6 @@
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
-		</dependency>
-
-		<!-- apache -->
-		<dependency>
-			<groupId>org.apache.httpcomponents</groupId>
-			<artifactId>httpclient</artifactId>
-			<version>4.3.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi</artifactId>
-			<version>3.8</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
-			<version>3.8</version>
 		</dependency>
 
 		<!-- Log -->

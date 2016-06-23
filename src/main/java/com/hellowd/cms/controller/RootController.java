@@ -13,6 +13,7 @@ import org.springframework.beans.ConversionNotSupportedException;
 import org.springframework.beans.TypeMismatchException;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.http.converter.HttpMessageNotWritableException;
+import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindException;
 import org.springframework.web.HttpMediaTypeNotAcceptableException;
 import org.springframework.web.HttpMediaTypeNotSupportedException;
@@ -35,7 +36,7 @@ import java.util.Map;
 /**
  * @author SangHoon, Lee(devsh@helloworlds.co.kr)
  */
-@RestController
+@Controller
 @RequestMapping("/")
 public class RootController {
 
