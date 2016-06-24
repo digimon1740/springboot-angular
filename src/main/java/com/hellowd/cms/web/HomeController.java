@@ -1,4 +1,4 @@
-package com.hellowd.cms.controller;
+package com.hellowd.cms.web;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,9 +18,18 @@ public class HomeController {
 		return "hello";
 	}
 
-	@RequestMapping("/success")
-	public String login() throws Exception {
+	@RequestMapping("/main")
+	public String main() throws Exception {
 		return "layout";
 	}
 
+	@RequestMapping("/list")
+	public String list() throws Exception {
+		return "cmsList";
+	}
+
+	@RequestMapping("/calculate")
+	public String calculate() throws Exception {
+		return "cmsCalculate";
+	}
 }

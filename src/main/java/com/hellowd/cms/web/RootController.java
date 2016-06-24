@@ -1,4 +1,4 @@
-package com.hellowd.cms.controller;
+package com.hellowd.cms.web;
 
 import com.hellowd.cms.exception.BadRequestException;
 import com.hellowd.cms.exception.ConflictException;
@@ -22,7 +22,6 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.support.MissingServletRequestPartException;
 import org.springframework.web.servlet.mvc.multiaction.NoSuchRequestHandlingMethodException;
 
