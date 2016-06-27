@@ -1,6 +1,6 @@
-package com.hellowd.cms.exception;
+package com.hellowd.exception;
 
-public class ConflictException extends Exception {
+public class UnauthorizedException extends Exception {
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -8,7 +8,7 @@ public class ConflictException extends Exception {
 	 * The cause is not initialized, and may subsequently be initialized by a
 	 * call to {@link #initCause}.
 	 */
-	public ConflictException() {
+	public UnauthorizedException() {
 		super();
 	}
 
@@ -16,12 +16,12 @@ public class ConflictException extends Exception {
 	 * Constructs a new exception with the specified detail message. The cause
 	 * is not initialized, and may subsequently be initialized by a call to
 	 * {@link #initCause}.
-	 *
+	 * 
 	 * @param message
 	 *            the detail message. The detail message is saved for later
 	 *            retrieval by the {@link #getMessage()} method.
 	 */
-	public ConflictException(String message) {
+	public UnauthorizedException(String message) {
 		super(message);
 	}
 
@@ -30,7 +30,7 @@ public class ConflictException extends Exception {
 	 * <p>
 	 * Note that the detail message associated with <code>cause</code> is
 	 * <i>not</i> automatically incorporated in this exception's detail message.
-	 *
+	 * 
 	 * @param message
 	 *            the detail message (which is saved for later retrieval by the
 	 *            {@link #getMessage()} method).
@@ -41,7 +41,7 @@ public class ConflictException extends Exception {
 	 *            unknown.)
 	 * @since 1.4
 	 */
-	public ConflictException(String message, Throwable cause) {
+	public UnauthorizedException(String message, Throwable cause) {
 		super(message, cause);
 	}
 
@@ -52,7 +52,7 @@ public class ConflictException extends Exception {
 	 * constructor is useful for exceptions that are little more than wrappers
 	 * for other throwables (for example,
 	 * {@link java.security.PrivilegedActionException}).
-	 *
+	 * 
 	 * @param cause
 	 *            the cause (which is saved for later retrieval by the
 	 *            {@link #getCause()} method). (A <tt>null</tt> value is
@@ -60,7 +60,7 @@ public class ConflictException extends Exception {
 	 *            unknown.)
 	 * @since 1.4
 	 */
-	public ConflictException(Throwable cause) {
+	public UnauthorizedException(Throwable cause) {
 		super(cause);
 	}
 

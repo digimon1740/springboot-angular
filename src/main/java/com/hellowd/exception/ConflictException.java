@@ -1,6 +1,6 @@
-package com.hellowd.cms.exception;
+package com.hellowd.exception;
 
-public class NotFoundException extends Exception {
+public class ConflictException extends Exception {
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -8,7 +8,7 @@ public class NotFoundException extends Exception {
 	 * The cause is not initialized, and may subsequently be initialized by a
 	 * call to {@link #initCause}.
 	 */
-	public NotFoundException() {
+	public ConflictException() {
 		super();
 	}
 
@@ -21,7 +21,7 @@ public class NotFoundException extends Exception {
 	 *            the detail message. The detail message is saved for later
 	 *            retrieval by the {@link #getMessage()} method.
 	 */
-	public NotFoundException(String message) {
+	public ConflictException(String message) {
 		super(message);
 	}
 
@@ -41,7 +41,7 @@ public class NotFoundException extends Exception {
 	 *            unknown.)
 	 * @since 1.4
 	 */
-	public NotFoundException(String message, Throwable cause) {
+	public ConflictException(String message, Throwable cause) {
 		super(message, cause);
 	}
 
@@ -60,7 +60,7 @@ public class NotFoundException extends Exception {
 	 *            unknown.)
 	 * @since 1.4
 	 */
-	public NotFoundException(Throwable cause) {
+	public ConflictException(Throwable cause) {
 		super(cause);
 	}
 

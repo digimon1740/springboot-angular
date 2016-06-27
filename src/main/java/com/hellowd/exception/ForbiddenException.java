@@ -1,6 +1,6 @@
-package com.hellowd.cms.exception;
+package com.hellowd.exception;
 
-public class UnauthorizedException extends Exception {
+public class ForbiddenException extends Exception {
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -8,7 +8,7 @@ public class UnauthorizedException extends Exception {
 	 * The cause is not initialized, and may subsequently be initialized by a
 	 * call to {@link #initCause}.
 	 */
-	public UnauthorizedException() {
+	public ForbiddenException() {
 		super();
 	}
 
@@ -16,12 +16,12 @@ public class UnauthorizedException extends Exception {
 	 * Constructs a new exception with the specified detail message. The cause
 	 * is not initialized, and may subsequently be initialized by a call to
 	 * {@link #initCause}.
-	 * 
+	 *
 	 * @param message
 	 *            the detail message. The detail message is saved for later
 	 *            retrieval by the {@link #getMessage()} method.
 	 */
-	public UnauthorizedException(String message) {
+	public ForbiddenException(String message) {
 		super(message);
 	}
 
@@ -30,7 +30,7 @@ public class UnauthorizedException extends Exception {
 	 * <p>
 	 * Note that the detail message associated with <code>cause</code> is
 	 * <i>not</i> automatically incorporated in this exception's detail message.
-	 * 
+	 *
 	 * @param message
 	 *            the detail message (which is saved for later retrieval by the
 	 *            {@link #getMessage()} method).
@@ -41,7 +41,7 @@ public class UnauthorizedException extends Exception {
 	 *            unknown.)
 	 * @since 1.4
 	 */
-	public UnauthorizedException(String message, Throwable cause) {
+	public ForbiddenException(String message, Throwable cause) {
 		super(message, cause);
 	}
 
@@ -52,7 +52,7 @@ public class UnauthorizedException extends Exception {
 	 * constructor is useful for exceptions that are little more than wrappers
 	 * for other throwables (for example,
 	 * {@link java.security.PrivilegedActionException}).
-	 * 
+	 *
 	 * @param cause
 	 *            the cause (which is saved for later retrieval by the
 	 *            {@link #getCause()} method). (A <tt>null</tt> value is
@@ -60,7 +60,7 @@ public class UnauthorizedException extends Exception {
 	 *            unknown.)
 	 * @since 1.4
 	 */
-	public UnauthorizedException(Throwable cause) {
+	public ForbiddenException(Throwable cause) {
 		super(cause);
 	}
 

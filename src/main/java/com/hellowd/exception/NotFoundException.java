@@ -1,6 +1,6 @@
-package com.hellowd.cms.exception;
+package com.hellowd.exception;
 
-public class ForbiddenException extends Exception {
+public class NotFoundException extends Exception {
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -8,7 +8,7 @@ public class ForbiddenException extends Exception {
 	 * The cause is not initialized, and may subsequently be initialized by a
 	 * call to {@link #initCause}.
 	 */
-	public ForbiddenException() {
+	public NotFoundException() {
 		super();
 	}
 
@@ -21,7 +21,7 @@ public class ForbiddenException extends Exception {
 	 *            the detail message. The detail message is saved for later
 	 *            retrieval by the {@link #getMessage()} method.
 	 */
-	public ForbiddenException(String message) {
+	public NotFoundException(String message) {
 		super(message);
 	}
 
@@ -41,7 +41,7 @@ public class ForbiddenException extends Exception {
 	 *            unknown.)
 	 * @since 1.4
 	 */
-	public ForbiddenException(String message, Throwable cause) {
+	public NotFoundException(String message, Throwable cause) {
 		super(message, cause);
 	}
 
@@ -60,7 +60,7 @@ public class ForbiddenException extends Exception {
 	 *            unknown.)
 	 * @since 1.4
 	 */
-	public ForbiddenException(Throwable cause) {
+	public NotFoundException(Throwable cause) {
 		super(cause);
 	}
 

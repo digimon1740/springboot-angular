@@ -1,4 +1,4 @@
-package com.hellowd.cms.config;
+package com.hellowd.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

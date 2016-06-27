@@ -1,12 +1,12 @@
-package com.hellowd.cms.web;
+package com.hellowd.web;
 
-import com.hellowd.cms.exception.BadRequestException;
-import com.hellowd.cms.exception.ConflictException;
-import com.hellowd.cms.exception.ForbiddenException;
-import com.hellowd.cms.exception.NotFoundException;
-import com.hellowd.cms.exception.PasswordInvalidException;
-import com.hellowd.cms.exception.RequestEntityTooLargeException;
-import com.hellowd.cms.exception.UnauthorizedException;
+import com.hellowd.exception.BadRequestException;
+import com.hellowd.exception.ConflictException;
+import com.hellowd.exception.ForbiddenException;
+import com.hellowd.exception.NotFoundException;
+import com.hellowd.exception.PasswordInvalidException;
+import com.hellowd.exception.RequestEntityTooLargeException;
+import com.hellowd.exception.UnauthorizedException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.ConversionNotSupportedException;

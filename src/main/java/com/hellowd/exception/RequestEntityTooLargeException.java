@@ -1,6 +1,6 @@
-package com.hellowd.cms.exception;
+package com.hellowd.exception;
 
-public class BadRequestException extends Exception {
+public class RequestEntityTooLargeException extends Exception {
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -8,7 +8,7 @@ public class BadRequestException extends Exception {
 	 * The cause is not initialized, and may subsequently be initialized by a
 	 * call to {@link #initCause}.
 	 */
-	public BadRequestException() {
+	public RequestEntityTooLargeException() {
 		super();
 	}
 
@@ -21,7 +21,7 @@ public class BadRequestException extends Exception {
 	 *            the detail message. The detail message is saved for later
 	 *            retrieval by the {@link #getMessage()} method.
 	 */
-	public BadRequestException(String message) {
+	public RequestEntityTooLargeException(String message) {
 		super(message);
 	}
 
@@ -41,7 +41,7 @@ public class BadRequestException extends Exception {
 	 *            unknown.)
 	 * @since 1.4
 	 */
-	public BadRequestException(String message, Throwable cause) {
+	public RequestEntityTooLargeException(String message, Throwable cause) {
 		super(message, cause);
 	}
 
@@ -60,7 +60,7 @@ public class BadRequestException extends Exception {
 	 *            unknown.)
 	 * @since 1.4
 	 */
-	public BadRequestException(Throwable cause) {
+	public RequestEntityTooLargeException(Throwable cause) {
 		super(cause);
 	}
 
