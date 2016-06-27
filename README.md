@@ -1,2 +1,5 @@
 # springboot-angular
-SpringBoot+SpringSecurity+SpringDataJPA+AngularJS+Bootstrap 
+##BackEnd
+SpringBoot+SpringSecurity+SpringDataJPA
+##FrontEnd
+AngularJS+RequireJS+Bootstrap 
