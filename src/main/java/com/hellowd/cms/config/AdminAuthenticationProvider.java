@@ -71,7 +71,7 @@ public class AdminAuthenticationProvider implements AuthenticationProvider {
 			throw new BadCredentialsException(e.getMessage());
 		} catch (Exception e) {
 			logger.info(e.toString());
-			throw new RuntimeException(e.getMessage()); //nullpointer
+			throw new RuntimeException(e.getMessage());
 		}
 
 		return new UsernamePasswordAuthenticationToken(id, password, authorities);

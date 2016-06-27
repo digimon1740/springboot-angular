@@ -1,5 +1,4 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
 <!DOCTYPE html>
 <html>
 
@@ -8,7 +7,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>CMS | Main view</title>
+	<title>INSPINIA | Minor view</title>
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -33,24 +32,19 @@
                              </span> <span class="text-muted text-xs block">Art Director <b
 									class="caret"></b></span> </span> </a>
 						<ul class="dropdown-menu animated fadeInRight m-t-xs">
-							<li><a href="/logout">Logout</a></li>
+							<li><a href="#">Logout</a></li>
 						</ul>
 					</div>
 					<div class="logo-element">
 						IN+
 					</div>
 				</li>
-				<li class="active">
-					<a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">CMS 관리</span> <span
-							class="fa arrow"></span></a>
-					<ul class="nav nav-second-level">
-						<li><a href="/list">CMS 목록</a></li>
-						<li><a href="/calculate">CMS 정산 현황</a></li>
-					</ul>
+				<li>
+					<a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Main view</span></a>
 				</li>
-				<%--<li>--%>
-					<%--<a href="minor.html"><i class="fa fa-th-large"></i> <span class="nav-label">CMS 정산 현황</span> </a>--%>
-				<%--</li>--%>
+				<li class="active">
+					<a href="minor.html"><i class="fa fa-th-large"></i> <span class="nav-label">Minor view</span> </a>
+				</li>
 			</ul>
 
 		</div>
@@ -59,19 +53,19 @@
 	<div id="page-wrapper" class="gray-bg">
 		<div class="row border-bottom">
 			<nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
-				<%--<div class="navbar-header">--%>
-					<%--<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i>--%>
-					<%--</a>--%>
-					<%--<form role="search" class="navbar-form-custom" method="post" action="#">--%>
-						<%--<div class="form-group">--%>
-							<%--<input type="text" placeholder="Search for something..." class="form-control"--%>
-								   <%--name="top-search" id="top-search">--%>
-						<%--</div>--%>
-					<%--</form>--%>
-				<%--</div>--%>
+				<div class="navbar-header">
+					<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i>
+					</a>
+					<form role="search" class="navbar-form-custom" method="post" action="#">
+						<div class="form-group">
+							<input type="text" placeholder="Search for something..." class="form-control"
+								   name="top-search" id="top-search">
+						</div>
+					</form>
+				</div>
 				<ul class="nav navbar-top-links navbar-right">
 					<li>
-						<a href="/logout">
+						<a href="#">
 							<i class="fa fa-sign-out"></i> Log out
 						</a>
 					</li>
@@ -84,12 +78,9 @@
 				<div class="col-lg-12">
 					<div class="text-center m-t-lg">
 						<h1>
-							Welcome in INSPINIA Static SeedProject
+							Simple example of second view
 						</h1>
-						<small>
-							It is an application skeleton for a typical web app. You can use it to quickly bootstrap
-							your webapp projects and dev environment for these projects.
-						</small>
+						<small>Writen in minor.html file.</small>
 					</div>
 				</div>
 			</div>
@@ -120,3 +111,4 @@
 </body>
 
 </html>
+
