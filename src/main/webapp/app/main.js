@@ -16,7 +16,7 @@ require.config({
 		'jquery.ui': {
 			deps: ['jquery']
 		},
-		angular: {
+		'angular': {
 			deps: ['jquery'],
 			exports: 'angular'
 		},
@@ -25,8 +25,19 @@ require.config({
 		},
 		'angular.resource': {
 			deps: ['angular', 'angular.route']
-		}
+		},
+		'app': {
+			deps: ['angular']
+		},
 	},
-	deps: ['app']
+	//deps: ['app']
 });
 
+require(['text', 'i18n', 'jquery', 'angular', 'jquery.ui', 'app', 'angular.route', 'angular.resource'], function (text, i18n, $, angular) {
+	$(function () {
+		/**
+		 * @type {angular.Module}
+		 */
+		angular.bootstrap(document, ['cmsmanager']);    //  app start
+	});
+});
