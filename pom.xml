@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.hellowd</groupId>
-	<artifactId>cms.manager</artifactId>
+	<artifactId>springboot-angular</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>cmsManager</name>
+	<name>springBootAngular</name>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

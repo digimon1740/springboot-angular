@@ -38,6 +38,6 @@ require(['text', 'i18n', 'jquery', 'angular', 'jquery.ui', 'app', 'angular.route
 		/**
 		 * @type {angular.Module}
 		 */
-		angular.bootstrap(document, ['cmsmanager']);    //  app start
+		angular.bootstrap(document, ['springbootAngular']);    //  app start
 	});
 });
